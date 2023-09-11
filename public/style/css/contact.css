@@ -1,0 +1,58 @@
+/*
+<!--contact scscc->
+<!--Par: William John Adam Trindade-->
+<!--2022-09-15-->
+*/
+/* SCSS RGB */
+/* SCSS Gradient */
+@font-face {
+  font-family: "mulish";
+  src: url("../../assets/font/Mulish-VariableFont_wght.ttf");
+}
+.banniere__tilte {
+  font-family: "mulish";
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: rgb(158, 167, 120);
+}
+
+.banniere__subtitle {
+  font-family: "mulish";
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: rgb(158, 167, 120);
+}
+
+.footer {
+  padding: 3rem;
+  background: rgb(201, 196, 126);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(5,112,13, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(33, 59, 23);
+}
+
+hr {
+  background: rgb(123, 175, 150);
+  height: 1px;
+  border-style: none;
+  margin: 2% 0;
+}
+
+#container__banniere {
+  background-image: url("../../assets/img/mycologie/index1.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 15%;
+  border: 2px solid rgb(201, 196, 126);
+}
+
+.formulaire {
+  padding: 1rem;
+}/*# sourceMappingURL=contact.css.map */

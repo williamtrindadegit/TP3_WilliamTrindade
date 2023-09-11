@@ -1,0 +1,57 @@
+/*
+<!--cuillete scscc->
+<!--Par: William John Adam Trindade-->
+<!--2022-09-15-->
+*/
+
+@import "_colors";
+@import "_commun";
+
+.carousel {
+  background: $green-sheen;
+  margin-top: 20px;
+}
+.carousel__item {
+  text-align: center;
+  min-height: 15rem; // Prevent carousel from being distorted if for some reason image doesn't load //
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: 350px;
+  width: 100%;
+  margin: 0 auto;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item img {
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  height: 50vh;
+}
+
+.carousel-dark .carousel-caption {
+  color: $silver-chalice;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+.section__title {
+  text-align: center;
+  position: relative;
+}
+
+.section__title h2 {
+  font: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+  margin-bottom: 15px;
+  color: #141414;
+}
+
+.section--darkbackground {
+  background-color: $green-sheen;
+}

@@ -1,0 +1,98 @@
+/*
+<!--cuillete scscc->
+<!--Par: William John Adam Trindade-->
+<!--2022-09-15-->
+*/
+/* SCSS RGB */
+/* SCSS Gradient */
+/* SCSS RGB */
+/* SCSS Gradient */
+@font-face {
+  font-family: "mulish";
+  src: url("../../assets/font/Mulish-VariableFont_wght.ttf");
+}
+.banniere__tilte {
+  font-family: "mulish";
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: rgb(158, 167, 120);
+}
+
+.banniere__subtitle {
+  font-family: "mulish";
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: rgb(158, 167, 120);
+}
+
+.footer {
+  padding: 3rem;
+  background: rgb(201, 196, 126);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(5,112,13, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(33, 59, 23);
+}
+
+hr {
+  background: rgb(123, 175, 150);
+  height: 1px;
+  border-style: none;
+  margin: 2% 0;
+}
+
+.carousel {
+  background: rgb(123, 175, 150);
+  margin-top: 20px;
+}
+
+.carousel__item {
+  text-align: center;
+  min-height: 15rem;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: 350px;
+  width: 100%;
+  margin: 0 auto;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+  height: 50vh;
+}
+
+.carousel-dark .carousel-caption {
+  color: rgb(162, 171, 176);
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+.section__title {
+  text-align: center;
+  position: relative;
+}
+
+.section__title h2 {
+  font: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+  margin-bottom: 15px;
+  color: #141414;
+}
+
+.section--darkbackground {
+  background-color: rgb(123, 175, 150);
+}/*# sourceMappingURL=cuillete.css.map */

@@ -1,0 +1,25 @@
+/*
+<!--livres scscc->
+<!--Par: William John Adam Trindade-->
+<!--2023-09-15-->
+*/
+
+@import "_colors";
+@import "_commun";
+#container__banniere {
+  background-image: url("../../assets/img/mycologie/champingons.webp");
+  background-position: center;
+  background-size: cover;
+  padding: 15%;
+  border: 2px solid $dark-khaki;
+}
+
+.banniere__tilte {
+  color: $forest-green-traditional;
+  text-shadow: 0 0 3px #00ff00, 0 0 5px #0000ff;
+}
+
+.banniere__subtitle {
+  color: $forest-green-traditional;
+  text-shadow: 0 0 3px #00ff00, 0 0 5px #0000ff;
+}
