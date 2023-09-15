@@ -4,26 +4,26 @@
 <!--2023-09-15-->
 */
 
-@import "_colors";
-@import "_commun";
+@use "_colors" as colors;
+@use "_commun" as com;
 
 #container__banniere {
   background-image: url("../../assets/img/mycologie/banniere1.jpg");
   background-position: center;
   background-size: cover;
   padding: 15%;
-  border: 2px solid $dark-khaki;
+  border: 2px solid colors.$dark-khaki;
 }
 
 .cellule__text {
   font-family: "mulish";
   font-size: 0.8rem;
   padding: 5rem;
-  background-color: $dark-khaki;
+  background-color: colors.$dark-khaki;
 }
 .main__text {
   font-family: "mulish";
-  color: $forest-green-traditional;
+  color: colors.$forest-green-traditional;
   font-size: 5rem;
 }
 .text__danger {

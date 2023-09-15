@@ -15,7 +15,7 @@
   font-size: 3rem;
   text-align: center;
   margin: 1rem 0;
-  color: $moss-green;
+  color: colors.$moss-green;
 }
 
 .banniere__subtitle {
@@ -23,24 +23,22 @@
   font-size: 2rem;
   text-align: center;
   margin: 1rem 0;
-  color: $moss-green;
+  color: colors.$moss-green;
 }
 
 .footer {
   padding: 3rem;
-  background: $dark-khaki;
+  background: colors.$dark-khaki;
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(5,112,13, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.custom-toggler.navbar-toggler {
-  border-color: $forest-green-traditional;
-}
 hr {
-  background: $green-sheen;
+  background: colors.$green-sheen;
   height: 1px;
   border-style: none;
   margin: 2% 0;
+}
+
+.navbar-start {
+  width: 10%;
+  justify-content: flex-start;
 }

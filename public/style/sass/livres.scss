@@ -4,22 +4,22 @@
 <!--2023-09-15-->
 */
 
-@import "_colors";
-@import "_commun";
+@use "_colors" as colors;
+@use "_commun" as com;
 #container__banniere {
   background-image: url("../../assets/img/mycologie/champingons.webp");
   background-position: center;
   background-size: cover;
   padding: 15%;
-  border: 2px solid $dark-khaki;
+  border: 2px solid colors.$dark-khaki;
 }
 
 .banniere__tilte {
-  color: $forest-green-traditional;
+  color: colors.$forest-green-traditional;
   text-shadow: 0 0 3px #00ff00, 0 0 5px #0000ff;
 }
 
 .banniere__subtitle {
-  color: $forest-green-traditional;
+  color: colors.$forest-green-traditional;
   text-shadow: 0 0 3px #00ff00, 0 0 5px #0000ff;
 }

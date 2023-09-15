@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="TP3 - Site Mycologolie" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/mushroom-icon_144.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style/css/output.css" />
+    <link rel="stylesheet" href="style/css/livres.css" />
+    <title>TP3 G1050- Site Mycologolie</title>
+  </head>
+  <body>
+    <header>
+        <button id="btnInstall" onclick="install()" hidden > 
+          Install PWA 
+      </button>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <a
+          class="btn btn-ghost normal-case text-xl w-100 rounded-full"
+          href="index.html"
+          title="Accueil logo"
+        >
+          <img src="assets/img/mushroom-icon_24.png" alt="Logo" />
+        </a>
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="cuillete.html">Cuillete</a>
+            </li>
+            <li>
+              <a href="livres.html" class="font-bold" >Livres & Autres resources</a>
+            </li>
+            <li>
+              <a href="contact.html">Contactez-nous</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="cuillete.html">Cuillete</a>
+          </li>
+          <li>
+            <a href="livres.html" class="font-bold"
+              >Livres & Autres resources</a
+            >
+          </li>
+          <li>
+            <a href="contact.html">Contactez-nous</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/install.js"></script>
+    <script>
+      // Register service worker.
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Service worker est chargé.", reg);
+          });
+        });
+      }
+    </script>
+  </body>
 </html>
