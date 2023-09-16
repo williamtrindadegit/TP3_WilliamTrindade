@@ -1,0 +1,20 @@
+/*
+<!--contact scscc->
+<!--Par: William John Adam Trindade-->
+<!--2023-09-15-->
+*/
+
+@use "_colors" as colors;
+@use "_commun" as com;
+
+#container__banniere {
+  background-image: url("../../assets/img/mycologie/index1.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 15%;
+  border: 2px solid colors.$dark-khaki;
+}
+
+.formulaire {
+  padding: 1rem;
+}

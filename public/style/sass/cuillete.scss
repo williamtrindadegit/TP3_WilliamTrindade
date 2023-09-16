@@ -1,0 +1,26 @@
+/*
+<!--cuillete scscc->
+<!--Par: William John Adam Trindade-->
+<!--2022-09-15-->
+*/
+
+@use "_colors" as colors;
+@use "_commun" as com;
+
+
+.section__title {
+  text-align: center;
+  position: relative;
+}
+
+.section__title h2 {
+  font: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+  margin-bottom: 15px;
+  color: #141414;
+}
+
+.section--darkbackground {
+  background-color: colors.$green-sheen;
+}

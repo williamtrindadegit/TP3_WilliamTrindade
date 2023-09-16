@@ -1,0 +1,79 @@
+/*
+<!--cuillete scscc->
+<!--Par: William John Adam Trindade-->
+<!--2022-09-15-->
+*/
+/* SCSS RGB */
+/* SCSS Gradient */
+/*
+<!--cuillete scscc->
+<!--Par: William John Adam Trindade-->
+<!--2022-09-15-->
+*/
+@font-face {
+  font-family: "mulish";
+  src: url("../../assets/font/Mulish-VariableFont_wght.ttf");
+}
+.banniere__tilte {
+  font-family: "mulish";
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: rgb(158, 167, 120);
+}
+
+.banniere__subtitle {
+  font-family: "mulish";
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: rgb(158, 167, 120);
+}
+
+.footer {
+  padding: 3rem;
+  background: rgb(33, 59, 23);
+}
+
+hr {
+  background: rgb(33, 59, 23);
+  height: 1px;
+  border-style: none;
+  margin: 2% 0;
+}
+
+.navbar-start {
+  width: 10%;
+  justify-content: flex-start;
+}
+
+.input-control.success input, .input-control.success textarea {
+  border-color: #09c372;
+}
+
+.input-control.error input, .input-control.error textarea {
+  border-color: #ff3860;
+}
+
+.input-control .errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
+.section__title {
+  text-align: center;
+  position: relative;
+}
+
+.section__title h2 {
+  font: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+  margin-bottom: 15px;
+  color: #141414;
+}
+
+.section--darkbackground {
+  background-color: rgb(123, 175, 150);
+}/*# sourceMappingURL=cuillete.css.map */

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="TP3 - Site Mycologolie" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/mushroom-icon_144.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style/css/output.css" />
+    <link rel="stylesheet" href="style/css/livres.css" />
+    <title>TP3 G1050- Site Mycologolie</title>
+  </head>
+  <body>
+    <header>
+      <button id="btnInstall" onclick="install()" hidden>Install PWA</button>
+    </header>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <a
+          class="btn btn-ghost normal-case text-xl w-100 rounded-full"
+          href="index.html"
+          title="Accueil logo"
+        >
+          <img src="assets/img/mushroom-icon_24.png" alt="Logo" />
+        </a>
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="cuillete.html">Cuillete</a>
+            </li>
+            <li>
+              <a href="livres.html" class="font-bold"
+                >Livres & Autres resources</a
+              >
+            </li>
+            <li>
+              <a href="contact.html">Contactez-nous</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="cuillete.html">Cuillete</a>
+          </li>
+          <li>
+            <a href="livres.html" class="font-bold"
+              >Livres & Autres resources</a
+            >
+          </li>
+          <li>
+            <a href="contact.html">Contactez-nous</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="relative py-24 px-4">
+      <div
+        class="z-20 flex flex-col relative text-blue-200 container items-center"
+      >
+        <h1
+          class="text-9xl drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-500"
+        >
+          Mycologie
+        </h1>
+        <p
+          class="text-2xl drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-500"
+        >
+          Le gout Livres et autres resources
+        </p>
+      </div>
+      <div class="absolute inset-0 h-auto z-10">
+        <img src="assets/img/mycologie/carrousel2.jpg" alt="" class="w-full" />
+      </div>
+    </section>
+    <section class="relative py-48 px-4">
+      <div
+        class="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center"
+      >
+        <div
+          class="tile col-span-1 md:col-span-2 lg:col-span-4 justify-items-center"
+        >
+          <h3 class="text-4xl text-center">Livres</h3>
+
+          <p class="relative py-4">
+            Il existe de nombreux excellents livres de champignons disponibles,
+            chacun ayant sa propre spécialité et sa zone de couverture
+            géographique. Si vous êtes intéressé par les champignons, vous
+            pouvez envisager de consulter un guide spécifique à votre région
+            pour une identification précise des espèces locales.
+          </p>
+        </div>
+
+        <div class="card w-auto glass">
+          <figure>
+            <img src="assets/img/mycologie/livre_1.jpg" alt="Guide Bon" />
+          </figure>
+          <div class="card-body">
+            <p>
+              Le plus connu et apprécié des guides modernes pour
+              amateurs.&nbsp;<strong>Marcel Bon&nbsp;</strong>a su présenter de
+              façon très accessible le fruit de sa vaste expérience.<br />1ère
+              Édition Arthaud 1988.<br /><br /><br />
+            </p>
+          </div>
+        </div>
+
+        <div class="card w-auto glass">
+          <figure>
+            <img
+              src="assets/img/mycologie/livre2.jpg"
+              alt="Guide Courtecuisse"
+            />
+          </figure>
+          <div class="card-body">
+            <p>
+              Guide trés complet comprenant entre autres une clé de
+              détermination macroscopique des champignons de France et d'Europe
+              et<br />​​160 planches en couleurs de
+              <strong>Bernard Duhem </strong>illustrent&nbsp;1751 espèces
+              décrites avec précision dans le texte par&nbsp;<strong
+                >Régis Courtecuisse.</strong
+              ><br />1ère<strong
+              > </strong>édition<strong>,&nbsp;</strong>Eclectis 1994.<br /><br />
+            </p>
+          </div>
+        </div>
+
+        <div class="card w-auto glass">
+          <figure>
+            <img src="assets/img/mycologie/livre_3.jpg" alt="Guide Hurtados" />
+          </figure>
+          <div class="card-body">
+            <p>
+              Ce guide, avec ses 900 photos et 1200 espèces et variétés
+              décrites, permet d'identifier la plupart des champignons de nos
+              régions. Tous ont été photographiés sur leur lieu de pousse, sans
+              modification du biotope, afin d'offrir un fidèle reflet de la
+              réalité.<br />A recommander aux débutants. Auteurs:
+              <strong>Didier</strong> <strong>Borgarino</strong> et
+              <strong>Christian</strong> <strong>Hurtado</strong>. Edisud 2004.
+            </p>
+          </div>
+        </div>
+
+        <div class="card w-96 glass">
+          <figure>
+            <img
+              src="assets/img/mycologie/livre_4.jpg"
+              alt="Guide Eyssartier"
+            />
+          </figure>
+          <div class="card-body">
+            <p>
+              <strong>Guillaume Eyssartier et Pierre Roux&nbsp;</strong>nous
+              présentent cet&nbsp;énorme guide, avec pas moins de 3000 espèces
+              décrites.<br />Ouvrage indispensable pour qui veut approfondir ses
+              connaissances en mycologie.<br />1ère Edit. Belin 2011.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-2 px-4">
+      <div class="container m-auto grid grid-cols-1 justify-items-center">
+        <div class="tile col-span-1 justify-items-center">
+          <h3 class="text-4xl text-center">Autres resources</h3>
+
+          <p class="relative py-4">
+            Les champignons sont des organismes fascinants qui suscitent
+            l'intérêt de nombreuses personnes, que ce soit en raison de leur
+            diversité, de leur utilisation culinaire ou médicinale, ou encore de
+            leur rôle crucial dans les écosystèmes. Si vous souhaitez
+            approfondir vos connaissances sur les champignons, il existe de
+            nombreuses ressources supplémentaires qui peuvent vous aider à
+            explorer ce domaine captivant.
+          </p>
+        </div>
+
+        <div class="collapse bg-base-200">
+          <input
+            type="radio"
+            name="my-accordion-1"
+            checked="checked"
+            title="Entreprises dans la cueillette en Mauricie"
+          />
+          <div class="collapse-title text-xl font-medium">
+            Entreprises dans la cueillette en Mauricie
+          </div>
+          <div class="collapse-content">
+            <ul class="list-disc px-20">
+              <li>
+                <a
+                  href="https://www.facebook.com/consciencenature/"
+                  target="_blank"
+                  rel="noopener"
+                  >Conscience nature</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.foretygouter.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Forêt y goûter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/LEmpreinte-Jardin-for%C3%AAt-1634779453264074/"
+                  target="_blank"
+                  rel="noopener"
+                  >l'Empreinte Jardin Forêt</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/champignons.forestiers/"
+                  target="_blank"
+                  rel="noopener"
+                  >Les champignons du Lac Édouard</a
+                >
+              </li>
+              <li>
+                <a href="http://mycosylva.com/" target="_blank" rel="noopener"
+                  >Mycosylva</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://pignonsurbois.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Pignon sur bois</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://prendreracine.ca/"
+                  target="_blank"
+                  rel="noopener"
+                  >Prendre racine</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse bg-base-200">
+          <input
+            type="radio"
+            name="my-accordion-1"
+            title="Recettes et produits"
+          />
+          <div class="collapse-title text-xl font-medium">
+            Recettes et produits
+          </div>
+          <div class="collapse-content">
+            <ul class="list-disc px-20">
+              <li>
+                <a
+                  href="http://www.foretygouter.com/apps/webstore/"
+                  target="_blank"
+                  rel="noopener"
+                  >Forêt y goûter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.morillequebec.com/boutique.php"
+                  target="_blank"
+                  rel="noopener"
+                  >Morille Québec</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.mycoboutique.com"
+                  target="_blank"
+                  rel="noopener"
+                  >Mycoboutique
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://mycosylva.com/boutique/fr/champignons-c74/"
+                  target="_blank"
+                  rel="noopener"
+                  >Mycosylva</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://prendreracine.ca/boutique/"
+                  target="_blank"
+                  rel="noopener"
+                  >Prendre racine</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse bg-base-200">
+          <input
+            type="radio"
+            name="my-accordion-1"
+            title=" Mycologie et cercle de mycologues amateurs"
+          />
+          <div class="collapse-title text-xl font-medium">
+            Mycologie et cercle de mycologues amateurs
+          </div>
+          <div class="collapse-content">
+            <ul class="list-disc px-20">
+              <li>
+                <a href="http://www.acpfnl.ca/" target="_blank" rel="noopener"
+                  >Association pour la commercialisation des produits forestiers
+                  non ligneux (ACPFNL)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.mycologie-cmaq.org"
+                  target="_blank"
+                  rel="noopener"
+                  >Cercle des mycologues amateurs de Québec
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://www.mycolanauricie.ca"
+                  target="_blank"
+                  rel="noopener"
+                  >Cercle des mycologues de Lanaudière et de la Mauricie
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://www.mycomontreal.qc.ca"
+                  target="_blank"
+                  rel="noopener"
+                  >Cercle des mycologues de Montréal
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://mycosag.chez.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Cercle des mycologues du Saguenay</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.mycologues-estrie.org"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Les mycologues de l’Estrie
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://www.mycoquebec.org"
+                  target="_blank"
+                  rel="noopener"
+                  >Mycoquébec
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <aside>
+        <img src="assets/img/mushroom-icon_96.png" alt="Logo" />
+        <p class="text-xl">
+          Fait par William John Adam Trindade<br />Cégep de Trois-Rivières
+        </p>
+      </aside>
+      <nav>
+        <div class="footer-title text-xl">Social</div>
+        <div class="grid grid-flow-col gap-4">
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="sr-only">Facebook page</span>
+          </a>
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-linkedin"></i>
+            <span class="sr-only">Linkedin account</span>
+          </a>
+
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="sr-only">Instagram page</span>
+          </a>
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-twitter"></i>
+            <span class="sr-only">Twitter page</span>
+          </a>
+        </div>
+      </nav>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/23ca1c8c45.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/install.js"></script>
+    <script>
+      // Register service worker.
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Service worker est chargé.", reg);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+/*
+<!--index scscc->
+<!--Par: William John Adam Trindade-->
+<!--2023-09-15-->
+*/
+
+@use "_colors" as colors;
+@use "_commun" as com;
+
+#container__banniere {
+  background-image: url("../../assets/img/mycologie/banniere1.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 15%;
+  border: 2px solid colors.$dark-khaki;
+}
+
+.cellule__text {
+  font-family: "mulish";
+  font-size: 0.8rem;
+  padding: 5rem;
+  background-color: colors.$dark-khaki;
+}
+.main__text {
+  font-family: "mulish";
+  color: colors.$forest-green-traditional;
+  font-size: 5rem;
+}
+.text__danger {
+  font-family: "mulish";
+  color: red;
+  font-size: 5rem;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}

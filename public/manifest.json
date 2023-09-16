@@ -1,0 +1,42 @@
+{
+  "name": "TP3 site mycologie avec tailwind",
+  "short_name": "TP3_G1050",
+  "background_color": "#7baf96",
+  "theme_color": "#213b17",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "./",
+  "start_url": "index.html",
+  "icons": [
+    {
+      "src": "assets/img/mushroom-icon_128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/img/mushroom-icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/img/mushroom-icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/img/mushroom-icon_144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/img/mushroom-icon_64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

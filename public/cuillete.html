@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TP3 - Site Mycologolie" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/mushroom-icon_144.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style/css/output.css" />
+    <link rel="stylesheet" href="style/css/cuillete.css" />
+    <title>TP3 G1050- Site Mycologolie</title>
+  </head>
+  <body>
+    <header>
+      <button id="btnInstall" onclick="install()" hidden>Install PWA</button>
+    </header>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <a
+          class="btn btn-ghost normal-case text-xl w-100 rounded-full"
+          href="index.html"
+          title="Accueil logo"
+        >
+          <img src="assets/img/mushroom-icon_24.png" alt="Logo" />
+        </a>
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a href="cuillete.html" class="font-bold">Cuillete</a>
+            </li>
+            <li>
+              <a href="livres.html">Livres & Autres resources</a>
+            </li>
+            <li>
+              <a href="contact.html">Contactez-nous</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="cuillete.html" class="font-bold">Cuillete</a>
+          </li>
+          <li>
+            <a href="livres.html">Livres & Autres resources</a>
+          </li>
+          <li>
+            <a href="contact.html">Contactez-nous</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="relative py-24 px-4">
+      <div
+        class="z-20 flex flex-col relative text-blue-200 container items-center"
+      >
+        <h1
+          class="text-9xl drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-500"
+        >
+          Mycologie
+        </h1>
+        <p
+          class="text-2xl drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-500"
+        >
+          Cuillete et observation
+        </p>
+      </div>
+      <div class="absolute inset-0 h-96 z-10">
+        <img
+          src="assets/img/mycologie/carrousel2.jpg"
+          alt=""
+          class="w-full h-96"
+        />
+      </div>
+    </section>
+
+    <section class="relative py-24 px-4">
+      <div
+        class="carousel flex w-full relative h-96 overflow-hidden rounded-lg"
+      >
+        <div id="item1" class="carousel-item w-full justify-center">
+          <img
+            src="assets/img/mycologie/cuillete.jpg"
+            class="object-fit"
+            title="Cuillete"
+          />
+        </div>
+        <div id="item2" class="carousel-item w-full justify-center">
+          <img
+            src="assets/img/mycologie/cuillete2.jpg"
+            class="w-fit"
+            title="Cuillete"
+          />
+        </div>
+        <div id="item3" class="carousel-item w-full justify-center">
+          <img
+            src="assets/img/mycologie/classification.jpeg"
+            class="w-fit"
+            title="Classification"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center w-full py-2 gap-2">
+        <a href="#item1" class="btn btn-xs">1</a>
+        <a href="#item2" class="btn btn-xs">2</a>
+        <a href="#item3" class="btn btn-xs">3</a>
+      </div>
+    </section>
+
+    <section class="relative py-2 px-4">
+      <div class="container m-auto grid grid-cols-1 justify-items-center">
+        <div class="tile col-span-1 justify-items-center">
+          <h3 class="text-4xl text-center">
+            CUEILLETTE DE CHAMPIGNONS ET PLANTES SAUVAGESs
+          </h3>
+
+          <p class="relative py-4">
+            CUEILLETTE DE CHAMPIGNONS ET PLANTES SAUVAGES LES SAMEDIS MATINS DU
+            22 JUILLET AU 14 OCTOBRE 2023.
+          </p>
+          <p>
+            Tous les samedis matin de la mi-juillet au début octobre, vivez une
+            sortie thématique d’une demi-journée dans les forêts du Cap Jaseux,
+            guidée par des professionnels de la cueillette de champignons
+            forestiers et de plantes sauvages. Lors d’une randonnée en forêt qui
+            dure environ 2 heures, les guides vous aident à identifier et
+            cueillir différentes espèces de champignons et goûter à certaines
+            plantes sauvages. La fin de la sortie est marquée d’une petite
+            dégustation de champignons (si les mesures sanitaires en vigueur le
+            permettent) et les guides vous remettront quelques recettes à
+            essayer à la maison. La cueillette est séparée parmi les
+            participants intéressés.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="divider divider-horizontal"></div>
+    <section class="relative py-2 px-4">
+      <div class="container m-auto grid grid-cols-1 justify-items-center">
+        <div class="tile col-span-1 justify-items-center">
+          <h3 class="text-4xl text-center">TARIFS</h3>
+        </div>
+      </div>
+      <div>
+        <div class="overflow-x-auto">
+          <table class="table">
+            <!-- head -->
+            <thead>
+              <tr>
+                <th></th>
+                <th class="text-2xl">Age</th>
+                <th class="text-2xl">Prix</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- row 1 -->
+              <tr class="bg-base-200">
+                <th><i class="fa-solid fa-person text-4xl"></i></th>
+                <td>Adulte (18 ans et plus)</td>
+                <td>
+                  <strong
+                    ><span>30,00<sup>$</sup></span></strong
+                  >/ personne
+                </td>
+                <td>
+                  <a
+                    class="btn btn-info"
+                    target="_blank"
+                    title="Réservez"
+                    href=""
+                    >Réservez</a
+                  >
+                </td>
+              </tr>
+              <!-- row 2 -->
+              <tr>
+                <th><i class="fa-solid fa-child text-4xl"></i></th>
+                <td>Junior (17 ans et moins)</td>
+                <td>
+                  <strong
+                    ><span>10,00<sup>$</sup></span></strong
+                  >/ personne
+                </td>
+                <td>
+                  <a
+                    class="btn btn-info"
+                    target="_blank"
+                    title="Réservez"
+                    href=""
+                    >Réservez</a
+                  >
+                </td>
+              </tr>
+              <!-- row 3 -->
+              <tr class="bg-base-200">
+                <th><i class="fa-solid fa-person-cane text-4xl"></i></th>
+                <td>Seniors (65 ans et plus)</td>
+                <td>
+                  <strong
+                    ><span>15,00<sup>$</sup></span></strong
+                  >/ personne
+                </td>
+                <td>
+                  <a
+                    class="btn btn-info"
+                    target="_blank"
+                    title="Réservez"
+                    href=""
+                    >Réservez</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="relative py-2 px-4">
+      <div
+        class="container m-auto grid grid-cols-1 justify-items-center bg-orange-300"
+      >
+        <div class="tile col-span-1 justify-items-center">
+          <h3 class="text-4xl text-center">PLANIFIER VOTRE SÉJOUR</h3>
+          <h4 class="text-2xl text-center">
+            Vous avez les questions, nous avons les réponses
+          </h4>
+        </div>
+
+        <div
+          class="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center py-12"
+        >
+          <div class="hero h-auto bg-base-200">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-3xl font-bold">
+                  Les animaux de compagnie sont-ils admis sur le site ?
+                </h1>
+                <p class="py-6">
+                  Le Parc Aventures Cap Jaseux est l’un des rares parcs où les
+                  animaux en laisse sont admis. Ils le sont dans les sentiers
+                  pédestres, à la plage, au camping et dans les cabines équipées
+                  en bois rond. Attention! Ils ne sont pas autorisés à
+                  l’intérieur des dômes, sphères suspendues et maisons dans les
+                  arbres.
+                </p>
+                <button class="btn btn-primary">Pour plus de details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero h-auto  bg-base-200">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-3xl font-bold">
+                  Les animaux de compagnie sont-ils admis sur le site ?
+                </h1>
+                <p class="py-6">
+                  Le Parc Aventures Cap Jaseux est l’un des rares parcs où les
+                  animaux en laisse sont admis. Ils le sont dans les sentiers
+                  pédestres, à la plage, au camping et dans les cabines équipées
+                  en bois rond. Attention! Ils ne sont pas autorisés à
+                  l’intérieur des dômes, sphères suspendues et maisons dans les
+                  arbres.
+                </p>
+                <button class="btn btn-primary">Pour plus de details</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="hero h-auto  bg-base-200">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-3xl font-bold">
+                    Comment puis-je effectuer une réservation ?
+                </h1>
+                <p class="py-6">
+                    Vous pouvez réserver en ligne via la section « Réserver en ligne » ou en téléphonant au 1-888-674-9114. Nos préposé(e)s au service à la
+                    clientèle se feront un plaisir de vous aider à planifier un séjour des plus agréables.
+                </p>
+                <button class="btn btn-primary">Pour plus de details</button>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="hero h-auto  bg-base-200">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-3xl font-bold">
+                    Quels sont les modes de paiement acceptés ?
+                </h1>
+                <p class="py-6">
+                    À votre arrivée sur le site, vous pouvez payer en argent comptant, par débit, par carte de crédit (Visa, Mastercard, American Express) ou par
+                    chèque de voyage (veuillez noter que les chèques personnels ne sont pas acceptés).
+                </p>
+                <button class="btn btn-primary">Pour plus de details</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <aside>
+        <img src="assets/img/mushroom-icon_96.png" alt="Logo" />
+        <p class="text-xl">
+          Fait par William John Adam Trindade<br />Cégep de Trois-Rivières
+        </p>
+      </aside>
+      <nav>
+        <div class="footer-title text-xl">Social</div>
+        <div class="grid grid-flow-col gap-4">
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="sr-only">Facebook page</span>
+          </a>
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-linkedin"></i>
+            <span class="sr-only">Linkedin account</span>
+          </a>
+
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="sr-only">Instagram page</span>
+          </a>
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-twitter"></i>
+            <span class="sr-only">Twitter page</span>
+          </a>
+        </div>
+      </nav>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/23ca1c8c45.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/install.js"></script>
+    <script>
+      // Register service worker.
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then((reg) => {
+            console.log("Notre service worker est chargé!.", reg);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
