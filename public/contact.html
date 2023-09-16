@@ -13,13 +13,13 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="style/css/output.css" />
     <link rel="stylesheet" href="style/css/contact.css" />
+    <script defer src="js/contact.js"></script>
     <title>TP3 G1050- Site Mycologolie</title>
   </head>
   <body>
     <header>
-        <button id="btnInstall" onclick="install()" hidden > 
-          Install PWA 
-      </button>
+      <button id="btnInstall" onclick="install()" hidden>Install PWA</button>
+    </header>
     <div class="navbar bg-base-100">
       <div class="navbar-start">
         <a
@@ -82,7 +82,212 @@
         </ul>
       </div>
     </div>
+    <section class="relative py-24 px-4">
+      <div
+        class="z-20 flex flex-col relative text-blue-200 container items-center"
+      >
+        <h1
+          class="text-9xl drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-500"
+        >
+          Contactez-nous
+        </h1>
+        <p
+          class="text-2xl drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-500"
+        >
+          Pour toute question concernant au sujet des champignons, n’hésitez pas
+          à nous écrire ou à communiquer avec un membre de notre équipe dévouée
+          qui se fera un plaisir de vous répondre dans les meilleurs délais
+          possibles.
+        </p>
+      </div>
+      <div class="absolute inset-0 h-96 z-10">
+        <img
+          src="assets/img/mycologie/carrousel1.jpg"
+          alt=""
+          class="w-full h-96"
+        />
+      </div>
+    </section>
+
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-8">
+      <h2 class="text-2xl font-semibold mb-6">Formulaire</h2>
+      <form
+        action="confirmation.html"
+        onsubmit="return validateInputs();"
+        method="GET"
+        novalidate
+      >
+        <div class="mb-4 input-control">
+          <label for="nom" class="block text-gray-700 font-semibold mb-2"
+            >Nom</label
+          >
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            class="w-full border-gray-300 rounded-md px-4 py-2 focus:border-blue-400 focus:outline-none"
+            required
+          />
+          <div class="errorMessage"></div>
+        </div>
+        <div class="mb-4 input-control">
+          <label for="prenom" class="block text-gray-700 font-semibold mb-2"
+            >Prénom</label
+          >
+          <input
+            type="text"
+            id="prenom"
+            name="prenom"
+            class="w-full border-gray-300 rounded-md px-4 py-2 focus:border-blue-400 focus:outline-none"
+            required
+          />
+          <div class="errorMessage"></div>
+        </div>
+        <div class="mb-4 input-control">
+          <label for="courriel" class="block text-gray-700 font-semibold mb-2"
+            >Courriel</label
+          >
+          <input
+            type="email"
+            id="courriel"
+            name="courriel"
+            class="w-full border-gray-300 rounded-md px-4 py-2 focus:border-blue-400 focus:outline-none"
+            required
+          />
+          <div class="errorMessage"></div>
+        </div>
+        <div class="mb-4 input-control">
+          <label for="telephone" class="block text-gray-700 font-semibold mb-2"
+            >Numéro de téléphone</label
+          >
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            class="w-full border-gray-300 rounded-md px-4 py-2 focus:border-blue-400 focus:outline-none"
+            required
+          />
+          <div class="errorMessage"></div>
+        </div>
+        <div class="mb-4 input-control">
+          <label
+            for="date_naissance"
+            class="block text-gray-700 font-semibold mb-2"
+            >Date de naissance</label
+          >
+          <input
+            type="date"
+            id="date_naissance"
+            name="date_naissance"
+            class="w-full border-gray-300 rounded-md px-4 py-2 focus:border-blue-400 focus:outline-none"
+            required
+          />
+          <div class="errorMessage"></div>
+        </div>
+
+        <div class="mb-4 input-control">
+          <label for="adresse" class="block text-gray-700 font-semibold mb-2"
+            >Numéro de porte et rue</label
+          >
+          <input
+            type="text"
+            id="adresse"
+            name="adresse"
+            class="w-full border-gray-300 rounded-md px-4 py-2 focus:border-blue-400 focus:outline-none"
+            required
+          />
+          <div class="errorMessage"></div>
+        </div>
+        <div class="mb-4 input-control">
+          <label for="ville" class="block text-gray-700 font-semibold mb-2"
+            >Ville</label
+          >
+          <input
+            type="text"
+            id="ville"
+            name="ville"
+            class="w-full border-gray-300 rounded-md px-4 py-2 focus:border-blue-400 focus:outline-none"
+            required
+          />
+          <div class="errorMessage"></div>
+        </div>
+        <div class="mb-4 input-control">
+          <label
+            for="etat_province"
+            class="block text-gray-700 font-semibold mb-2"
+            >État/Province</label
+          >
+          <input
+            type="text"
+            id="etat_province"
+            name="etat_province"
+            class="w-full border-gray-300 rounded-md px-4 py-2 focus:border-blue-400 focus:outline-none"
+            required
+          />
+          <div class="errorMessage"></div>
+        </div>
+        <div class="mb-6 input-control">
+          <label
+            for="code_postal"
+            class="block text-gray-700 font-semibold mb-2"
+            >Code postal</label
+          >
+          <input
+            type="text"
+            id="code_postal"
+            name="code_postal"
+            class="w-full border-gray-300 rounded-md px-4 py-2 focus:border-blue-400 focus:outline-none"
+            required
+          />
+          <div class="errorMessage"></div>
+        </div>
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md focus:outline-none"
+          >
+            Soumettre
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <aside>
+        <img src="assets/img/mushroom-icon_96.png" alt="Logo" />
+        <p class="text-xl">
+          Fait par William John Adam Trindade<br />Cégep de Trois-Rivières
+        </p>
+      </aside>
+      <nav>
+        <header class="footer-title text-xl">Social</header>
+        <div class="grid grid-flow-col gap-4">
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="sr-only">Facebook page</span>
+          </a>
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-linkedin"></i>
+            <span class="sr-only">Linkedin account</span>
+          </a>
+
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="sr-only">Instagram page</span>
+          </a>
+          <a href="#" class="hover:text-gray-400 dark:hover:text-white">
+            <i class="fa-brands fa-twitter"></i>
+            <span class="sr-only">Twitter page</span>
+          </a>
+        </div>
+      </nav>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/23ca1c8c45.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/install.js"></script>
+
     <script>
       // Register service worker.
       if ("serviceWorker" in navigator) {

@@ -6,14 +6,19 @@
 const form = document.getElementById('form');
 const prenom = document.getElementById('prenom');
 const nom = document.getElementById('nom');
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
-const message2 = document.getElementById('message2');
+const courriel = document.getElementById('courriel');
+const telephone = document.getElementById('telephone');
+
+const date_naissance = document.getElementById('date_naissance');
+const adresse = document.getElementById('adresse');
+const ville = document.getElementById('ville');
+const etat_province = document.getElementById('etat_province');
+const code_postal = document.getElementById('code_postal');
+
 
 const setError = (element, message) => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');
+    const errorDisplay = inputControl.querySelector('.errorMessage');
 
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
@@ -22,7 +27,7 @@ const setError = (element, message) => {
 
 const setSuccess = element => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');
+    const errorDisplay = inputControl.querySelector('.errorMessage');
 
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
@@ -43,11 +48,14 @@ function validatePhoneNumber(input_str) {
 const validateInputs = () => {
     const prenomValue = prenom.value.trim();
     const nomValue = nom.value.trim();
-    const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();
-    const password2Value = password2.value.trim();
-    const message2Value = message2.value.trim();
-    const phoneValue = phone.value.trim();
+    const courrielValue = courriel.value.trim();
+    const telephoneValue = telephone.value.trim();
+
+    const adresseValue = adresse.value.trim();
+    const villeValue =  ville.value.trim();
+    const etat_provinceValue =  etat_province.value.trim();
+    const code_postalValue =  code_postal.value.trim();
+
     let noError = true;
     
 
@@ -64,52 +72,58 @@ const validateInputs = () => {
     } else {
         setSuccess(nom);
     }
-    if(phoneValue === '') {
-        setError(phone, 'téléphone requis');
+    if(telephoneValue === '') {
+        setError(telephone, 'Le téléphone est requis');
         noError =false;
-    } else if (!validatePhoneNumber(phoneValue)){
-        setError(phone , 'SVP mettre un téléphone valide');
+    } else if (!validatePhoneNumber(telephoneValue)){
+        setError(telephone , 'SVP mettez un téléphone valide');
         noError =false;
     } else {
 
-        setSuccess(phone)
+        setSuccess(telephone)
     }
 
-    if(emailValue === '') {
-        setError(email, 'Un courriel est requis');
+    if(courrielValue === '') {
+        setError(courriel, 'Un courriel est requis');
         noError =false;
-    } else if (!isValidEmail(emailValue)) {
-        setError(email, 'SVP mettre une adresse courriel valide');
+    } else if (!isValidEmail(courrielValue)) {
+        setError(courriel, 'SVP mettez une adresse courriel valide');
         noError =false;
     } else {
-        setSuccess(email);
+        setSuccess(courriel);
     }
 
-    if(passwordValue === '') {
-        setError(password, 'Un mot de passe est requis');
+
+    if(adresseValue === '') {
+        setError(adresse, 'Un adresse est requis');
         noError =false;
-    } else if (passwordValue.length < 8 ) {
-        setError(password, 'Le mot de passe doit avoir 8 caractères.')
-        noError =false;
+   
     } else {
-        setSuccess(password);
+        setSuccess(adresse);
+    }
+    
+    if(villeValue === '') {
+        setError(ville, 'Une ville est requis');
+        noError =false;
+   
+    } else {
+        setSuccess(ville);
+    }
+    if(etat_provinceValue === '') {
+        setError(etat_province, 'Un état ou province est requis');
+        noError =false;
+   
+    } else {
+        setSuccess(etat_province);
+    }
+    if(code_postalValue === '') {
+        setError(code_postal, 'Un code postal est requis');
+        noError =false;
+   
+    } else {
+        setSuccess(code_postal);
     }
 
-    if(password2Value === '') {
-        setError(password2, 'Merci de confirmer votre mot de passe');
-        noError =false;
-    } else if (password2Value !== passwordValue) {
-        setError(password2, "Mot de passe ne corresponde pas");
-        noError =false;
-    } else {
-        setSuccess(password2);
-    }
-    if(message2Value === '') {
-        setError(message2, 'Entrez un commentaire SVP');
-        noError =false;
-    } else {
-        setSuccess(message2);
-    } 
 
     return noError;
 };

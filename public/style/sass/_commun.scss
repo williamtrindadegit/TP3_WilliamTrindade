@@ -28,11 +28,11 @@
 
 .footer {
   padding: 3rem;
-  background: colors.$dark-khaki;
+  background: colors.$forest-green-traditional;;
 }
 
 hr {
-  background: colors.$green-sheen;
+  background: colors.$forest-green-traditional;
   height: 1px;
   border-style: none;
   margin: 2% 0;
@@ -41,4 +41,18 @@ hr {
 .navbar-start {
   width: 10%;
   justify-content: flex-start;
+}
+
+.input-control.success input, .input-control.success textarea {
+  border-color: #09c372;
+}
+
+.input-control.error input, .input-control.error textarea {
+  border-color: #ff3860;
+}
+
+.input-control .errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
 }
